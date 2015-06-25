@@ -14,6 +14,8 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+    @location =  Location.find(params[:id])
+    @result = request.location
   end
 
   # GET /locations/new
